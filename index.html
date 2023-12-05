@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text-4xl font-bold pl-3 text-red-600">Weather App</h1>
+    <div class="">
+        <div class="max-w-lg flex items-center space-x-2 ml-auto justify-end pr-3 mt-8">
+            <input id="input" type="text" placeholder="Enter city"
+                class="w-3/5 inline-block outline-none bg-slate-50 border border-gray-400 px-2 h-12 text-lg font-medium">
+            <button id="search-button" class="bg-rose-600 text-white text-lg font-medium px-3 h-12">Search</button>
+        </div>
+        <div class="max-w-lg flex items-center space-x-2 ml-auto justify-end pr-3 mt-4">
+            <p id="watch" class="text-right text-xl font-semibold"></p>
+        </div>
+    </div>
+
+    <div id="loader" class="loader hidden justify-center ">
+        <span
+            class="h-12 w-12 border-[5px] border-black border-b-transparent rounded-[50%] inline-block box-border animate-rotation anima"></span>
+    </div>
+
+    <div id="data" class="hidden">
+        <h3 id="warning" class="text-3xl font-semibold text-center"></h3>
+        <div class="flex items-center justify-center space-x-2 mt-8">
+            <div class="w-3/12 bg-slate-100 p-2 space-y-2">
+                <h4 class="text-xl font-semibold">Yesterday</h4>
+                <p id="yes-temp-cel" class="text-lg font-normal"></p>
+                <p id="yes-temp-feh" class="text-lg font-normal"></p>
+                <p id="yes-feels" class="text-lg font-normal"></p>
+                <p id="yes-humidity" class="text-lg font-normal"></p>
+                <p id="yes-wind" class="text-lg font-normal"></p>
+            </div>
+            <div class="w-3/12 bg-slate-100 p-2 space-y-2">
+                <h4 class="text-xl font-semibold">Today</h4>
+                <p id="today-temp-cel" class="text-lg font-normal"></p>
+                <p id="today-temp-feh" class="text-lg font-normal"></p>
+                <p id="today-feels" class="text-lg font-normal"></p>
+                <p id="today-humidity" class="text-lg font-normal"></p>
+                <p id="today-wind" class="text-lg font-normal"></p>
+            </div>
+            <div class="w-3/12 bg-slate-100 p-2 space-y-2">
+                <h4 class="text-xl font-semibold">Tomorrow</h4>
+                <p id="tom-temp-cel" class="text-lg font-normal"></p>
+                <p id="tom-temp-feh" class="text-lg font-normal"></p>
+                <p id="tom-feels" class="text-lg font-normal"></p>
+                <p id="tom-humidity" class="text-lg font-normal"></p>
+                <p id="tom-wind" class="text-lg font-normal"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
